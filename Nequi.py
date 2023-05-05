@@ -13,9 +13,9 @@ while intentos > 0:
         saldo_disponible = 4500
         print("su saldo es ",saldo_disponible)
         while True:
-            opcion = input("Ingrese la opción que desea realizar (Sacar, Enviar, Recargar o Salir): ")
+            opcion = input("Escriba la opción que desea realizar (retirar, enviar, recargar o salir): ")
             
-            if opcion == "sacar":
+            if opcion == "retirar":
                 tipo_retiro = input(" digite (si) para continuar el retiro en cajero ")
                 if saldo_disponible < 2000:
                     print("No tienes suficiente saldo para hacer el retiro.")
@@ -46,7 +46,7 @@ while intentos > 0:
                 else:
                     print("Recarga cancelada.")
             
-            elif opcion == "Salir":
+            elif opcion == "salir":
                 print("Gracias por usar Nequi.")
                 break
             
