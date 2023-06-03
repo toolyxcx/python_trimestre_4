@@ -1,14 +1,14 @@
-# idstudent=1000804100
-# namestudent="Gabriel"
-# lastname="melo"
-# statestudent= True
+tipogasolina = input("Ingrese el tipo de gasolina que desea (corriente o diesel): ")
 
-# print("el estudiante" ,namestudent, lastname," identificado con " ,idstudent, " se encuentra " ,statestudent)
+if tipogasolina.lower() == "corriente":
+    preciogasolina = 10800
+elif tipogasolina.lower() == "diesel":
+    preciogasolina = 9800
+else:
+    print("Tipo de gasolina no válido. Por favor ingrese 'corriente' o 'diesel'.")
+    exit()
 
-num1=int(input("Ingrese el primer número "))
-num2=int(input("Ingrese el segundo número "))
-
-total=num1+num2;
-
-print("La suma entre ",num1, "y" ,num2, "es" ,total)
+valor = float(input("Ingrese el valor a tanquear para el vehículo: "))
+galones = valor / preciogasolina
+print("Usted tanqueó", galones, "galones de gasolina", tipogasolina.lower() + ".")
 
